@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Love You Maya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="love-container">
+    <h1 class="love-message">I Love You Maya</h1>
+  </div>
+
+  <style>
+    .love-container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle, #ffdde1, #ee9ca7);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .love-message {
+      font-size: 4rem;
+      color: white;
+      text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+      animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</body>
+</html>
